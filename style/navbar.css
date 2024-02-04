@@ -1,0 +1,346 @@
+@media screen and (max-width: 1170px) and (min-width: 990px) {
+    .navbar-link a{font-size: 10px;}
+    .dropdown .dropdown-title{font-size: 10px;}
+    .nav-btn a{font-size: 12px;}
+
+}
+
+@media screen and (max-width: 992px) {
+    .btn-tooggle{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .container-fluid{
+        position: relative;
+    }
+    .navbar-btns{
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-btn-stay a{
+        font-size: 10px;
+    }
+    .basket a{
+        font-size: 10px;
+    }
+    .navbar-btns{
+        margin-right: 0px;
+    }
+}
+
+.navbar-brand{
+    position: absolute;
+    right: 46%;
+}
+
+.navbar{
+    height: 90px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.475);
+    align-items: center;
+    position: relative;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 100;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 27px;
+}
+
+.mydropdown-item:hover{
+    background-color: #4c0084;
+    .dropdown-from-left-text{
+        color: #f3f3f3;
+    }
+    .dropdown-from-left-text-icon{
+        color: white;
+    }
+}
+
+.mydropdown-item{
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    padding-top: 3px;
+    transition: all 250ms ease-in;
+}
+
+.mydropdown-item > span{
+    margin-right: 10px;
+}
+
+.mydropdown-item-last{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-link{
+    width: 100%;
+}
+
+.dropdown-link:hover{
+    color: white;
+}
+
+.dropdown{
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out 100ms;
+    display: inline-flex;
+    padding-right: 7px;
+}
+
+.dropdown-title-icon{
+    transition: all 250ms ease-in-out;
+}
+
+.dropdown-title{
+    transition: all 250ms ease-in-out;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dropdown:hover{
+    .dropdown-content-container{
+        display: block;
+    }
+    .dropdown-title-icon{
+        transform: rotate(180deg);
+    }
+}
+
+.dropdown-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content-container{
+    display: none;
+    margin-top: 24px;
+    position: absolute;
+    background-color: white;
+    transition: all 250ms ease-in-out 100ms;
+    border-radius: 0px 0px 10px 10px;
+    width: 250px;
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: right;
+}
+
+.dropdown-from-left{
+    width: 100%;
+}
+
+.dropdown-from-left:hover{
+    .dropdown-from-left-container{
+        display: block;
+    }
+}
+
+.dropdown-from-left-container{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-right: 123px;
+    margin-top: -26px;
+    width: 120px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.dropdown-from-left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.dropdown-from-left-link{
+    width: 100%;
+    height: 33px;
+    transition: all 250ms ease-in-out;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.dropdown-from-left-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.toplink{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.lastlink{
+    border-radius:  0px 0px 0px 10px;
+}
+
+.dropdown-from-left-link:hover{
+    background-color: #723c80;
+    color: white;
+    .dropdown-from-left-link > a{
+        color: white;
+    }
+}
+
+.navbar-link{
+    min-width: 30px;
+    color: black;
+}
+
+.marrg{
+    margin-right: 20px;
+}
+
+.navbar-link > a{
+    transition: all 250ms ease-in;
+}
+
+.navbar-link > a:hover{
+    color: #c670ff;
+}
+
+
+.navbar-btns{
+    display: flex;
+    gap: 5px;
+}
+
+.nav-btn{
+    font-size: 14px;
+    height: 35px;
+    gap: 5px;
+    border: 2px solid #9f111151;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+    /* width: 120px; */
+}
+
+.nav-btn-stay{
+    font-size: 14px;
+    height: 35px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #ffffffa1;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+    margin-left: 4%;
+}
+
+.login_icon{
+    color: white;
+}
+
+.nav-btn-stay:hover{
+    background-color: #49005b;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-btn{
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-image: url(../img/Flag_of_the_United_Kingdom.png);
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.language-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+}
+
+#language-dropdown{
+    position: absolute;
+    left: -22px;
+}
+
+#language-dropdown::after{
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease-in;
+    top: -33px;
+    left: calc(50% - 50px);
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid rgb(255, 255, 255);
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+}
+
+.lang-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin_link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.divider{
+    background: rgb(143,29,29);
+    background: linear-gradient(90deg, rgba(143,29,29,0) 0%, rgba(255,0,0,0.499124649859944) 34%, rgba(255,0,0,1) 50%, rgba(255,0,0,0.4963235294117647) 66%, rgba(255,0,0,0) 100%);
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.spannav{
+    cursor: pointer;    
+}
+.spannav:hover{
+    color: #c670ff;
+}
+
+.mylogo{
+    margin-right: 40px;
+}
+
+.mylogo img{
+    width: 60px;
+    height: 80px;
+}

@@ -1,0 +1,145 @@
+.news__main__title{
+  margin-right: 45%;
+  color: #723c80;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.newscontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.wrappercontain {
+  /* max-width: 1200px; */
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+.wrappercontain i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrappercontain i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrappercontain i:first-child{
+  left: -22px;
+}
+.wrappercontain i:last-child{
+  right: -22px;
+}
+.wrappercontain .carousel2{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel2::-webkit-scrollbar {
+  display: none;
+}
+.carousel2.no-transition {
+  scroll-behavior: auto;
+}
+.carousel2.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel2.dragging .newscard {
+  cursor: grab;
+  user-select: none;
+}
+.carousel2 :where(.newscard) {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.carousel2 .newscard {
+  scroll-snap-align: start;
+  height: 500px;
+  list-style: none;
+  background: #e4e4e4;
+  cursor: pointer;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  transition: all 250ms ease-in-out;
+  direction: ltr;
+}
+
+.newscard:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.newscard a {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.newscard a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.newscard a:hover::before {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+.images{
+  border-radius: 10px;
+}
+
+.images img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.carousel2 .newscard h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel2 .newscard span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .wrappercontain .carousel2 {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrappercontain .carousel2 {
+    grid-auto-columns: 100%;
+  }
+}
