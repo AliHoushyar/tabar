@@ -142,4 +142,13 @@
   .wrappercontain .carousel2 {
     grid-auto-columns: 100%;
   }
+  .news__main__title{
+    margin-right: 30%;
+  }
+  .newscard{
+    height: 357px !important;
+  }
+  .images img{
+    height: 200px;
+  }
 }

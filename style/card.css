@@ -2,7 +2,7 @@ section.card {
   position: relative;
   width: 250px;
   height: 250px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -92,4 +92,53 @@ section.card {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.Pcard {
+  width: 170px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pcard img{
+  width: 170px;
+  height: 220px;
+}
+
+.card_phone{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pcards{
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px){
+  .card__main__title{
+    margin-right: 0px;
+  }
+  .cards{
+    display: none;
+  }
+  .card__container{
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .card_phone{
+    display: none;
+  }
 }

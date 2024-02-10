@@ -170,7 +170,7 @@ const carousel = document.querySelector(".carousel2");
 const firstCardWidth = carousel.querySelector(".newscard").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrappercontain i");
 const carouselChildrens = [...carousel.children];
-let isDragging = false, isAutoPlay = false, startX, startScrollLeft, timeoutId;
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);

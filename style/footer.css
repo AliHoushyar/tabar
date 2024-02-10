@@ -121,4 +121,14 @@
     display: flex;
     justify-content: space-around;
   }
+
+@media screen and (max-width: 600px) {
+    .footercontainer{
+      flex-direction: column;
+      height: 100%;
+      align-items: start;
+      justify-content: space-between;
+      gap: 70px;
+    }
+}
   
