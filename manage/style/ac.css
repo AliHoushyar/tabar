@@ -1,0 +1,104 @@
+.account_name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.userimg{
+    width: 150px;
+    height: 150px;
+}
+
+.name-role{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.role{
+    font-size: 18px;
+    color: #959595;
+}
+
+.info_title {
+    overflow: hidden;
+    text-align: center;
+}
+
+.fardi,.adres,.hesab,.sahm{
+    margin-top: 20px;
+}
+
+.info_title{
+    font-size: 18px;
+    color: #959595;
+}
+
+.info_title::before,
+.info_title::after {
+    background-color: #959595;
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 2%;
+}
+
+.info_title::before {
+    margin-left: 10px;
+}
+
+.info_title::after {
+    width: 88%;
+    margin-right: 10px;
+}
+
+.hes_title::after {
+    width: 87%;
+}
+
+.info_bar{
+    border: 1px #c4c4c4 solid;
+    border-radius: 10px;
+    width: 100%;
+    color: #959595;
+}
+
+.info_bar span{
+    color: black;
+}
+
+.info_contain{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+
+.long{
+    grid-column: 3 / end;
+}
+
+@media screen and (max-width: 767px){
+    .info_title::after {
+        width: 365px;
+    }
+    .ad_title::after{
+        width: 355px;
+    }
+    .hes_title::after{
+        width: 345px;
+    }
+    .info_contain{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .long{
+        grid-column: 1 / end;
+    }
+}
