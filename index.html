@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تبار ثامن</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/app.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/sider.css">
@@ -66,40 +66,19 @@
                         <a class="nav-link" href="./index.html">صفحه اصلی</a>
                     </div>
                     <div class="nav-item navbar-link links marrg">
+                        <span class="nav-link spannav">معرفی شرکت</span>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
                         <span class="nav-link spannav">اخبار</span>
                     </div>
                     <div class="nav-item navbar-link links marrg">
-                        <span class="nav-link spannav">سامانه سهامداران</span>
+                        <a class="nav-link spannav" href="./loin page/index.html">سامانه سهامداران</a>
                     </div>
                     <div class="nav-item navbar-link links marrg">
                         <a class="nav-link" href="#">ارتباط با ما</a>
                     </div>
                     <button class="dropdown marrg">
-                        <div class="dropdown-title">
-                            <span>حاکمیت شرکتی</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <span>صورت های مالی</span>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <span>کمیته های تخصصی</span>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <span>کدال</span>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <span>tse</span>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="dropdown-title">
+                        <div id="linkedcomp" class="dropdown-title">
                             <span>شرکت های مرتبط</span>
                             <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -111,19 +90,19 @@
                                     <span>شرکت کشت و صنعت جوین</span>
                                 </div>
                                 <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <span>شرکت سنگ رزمندگان خراسان</span>
+                                    <span>شرکت سنگ رزمندگان</span>
                                 </div>
                             </div>
                         </div>
                     </button>
                 </div>
             </div>
-            <div class="nav-btn-stay">
+            <button class="nav-btn-stay" onclick="">
                 <svg class="login_icon"xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                 </svg>                      
-                <a href="./login-form/index.html" class="signin_link">ورود | ثبت نام</a>                    
-            </div>
+                <a href="./loin page/index.html" class="signin_link">ورود</a>                    
+            </button>
         </nav>
     </div>
     <div class="compInfo">
@@ -333,7 +312,7 @@
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 </html>

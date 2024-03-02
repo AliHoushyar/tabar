@@ -17,6 +17,9 @@
     .navbar-btns{
         margin: 0px auto;
     }
+    .nav-btn-stay{
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -249,9 +252,10 @@
 .nav-btn-stay{
     font-size: 14px;
     height: 35px;
-    width: 10%;
+    width: 8%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     border: 2px solid #ffffffa1;
     border-radius: 8px;
@@ -259,6 +263,7 @@
     transition: all 250ms ease-in;
     cursor: pointer;
     margin-left: 4%;
+    background-color: #f3f3f300;
 }
 
 .login_icon{
@@ -341,6 +346,6 @@
 }
 
 .mylogo img{
-    width: 60px;
-    height: 80px;
+    width: 55px;
+    height: 60px;
 }
