@@ -1,3 +1,5 @@
+@import "compas";
+
 @font-face {
     font-family: "shabnam";
     src: url("../fonts/Shabnam-FD.woff2") format("woff2");
@@ -150,7 +152,7 @@ body{
 }
 
 .topnav-right {
-  float: right;
+  float: left;
 }
 @media (max-width: 767px) {
   .slideshow-text {
@@ -218,4 +220,106 @@ body{
     margin-right: 20px;
     font-size: 12px;
   }
+}
+/* -------------------------------------------- */
+.faq-title {
+  font-size: 2em;
+  margin: 0.4em 0;
+}
+
+div.seperator {
+  width: 20em;
+  background-color: #751be3;
+  height: 0.17em;
+  margin-right: -1.8em;
+}
+
+.faq-list > div {
+  border-bottom: 0.07em solid #ededed;
+  padding: 1.5em 0em;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+summary:hover {
+  color: #751be3;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-right: -10px}
+  100%  {opacity: 1; margin-right: 55px}
+}
+
+details[open] summary {
+  color: #751be3;
+}
+
+details[open] p {
+  border-right: 2px solid #751be3;
+  margin-right: 55px;
+  padding-right: 25px;
+  opacity: 100;
+  transition: all 3s ease;
+}
+
+details[open] summary:after {
+  content: "-";
+  font-size: 3.2em;
+  margin: -33px 0.35em 0 0;
+  font-weight: 200;
+}
+
+.faq-body {
+  width: 70em;
+  margin: 6.5em auto;
+  box-shadow: 0px 0px 16px #5b5b5b;
+  border-radius: 0.2em;
+  padding: 5em;
+  background-color: #fff;
+}
+
+.faq-list {
+  width: 55em;
+  margin: 1em auto;
+  padding: 2em 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  background: transparent;
+  border-radius: 0.3em;
+  content: "+";
+  color: #751be3;
+  float: right;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: -0.3em 0.65em 0 0;
+  padding: 0;
+  text-align: center;
+  width: 25px;
 }
