@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبار ثامن</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+</head>
+<body>
+    <div class="site-top">
+        <nav class="navbar navbar-expand-lg navback" id="fixnavbar">
+            <a class="mylogo" href="./index.html"><img id="navlogo" src="./img/logo3.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid maincontainer">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="./index.html">صفحه اصلی</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link spannav">معرفی شرکت</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link spannav">اخبار</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link spannav" href="./loin page/index.html">سامانه سهامداران</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">ارتباط با ما</a>
+                    </div>
+                    <button class="dropdown marrg">
+                        <div id="linkedcomp" class="dropdown-title">
+                            <span>شرکت های مرتبط</span>
+                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                        </div>
+                        <div class="dropdown-content-container">
+                            <div class="dropdown-content">
+                                <div class="mydropdown-item dropdown-link">
+                                    <a>شرکت کشت و صنعت جوین</a>
+                                </div>
+                                <div class="mydropdown-item dropdown-link dropdown-item-last">
+                                    <a>شرکت سنگ رزمندگان</a>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <button class="nav-btn-stay" onclick="">
+                <svg class="login_icon"xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                </svg>                      
+                <a href="./loin page/index.html" class="signin_link">ورود</a>                    
+            </button>
+        </nav>
+    </div>
+    <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8 mb-5">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		        <div class="icon d-flex align-items-center justify-content-center">
+					        			        <span class="dicon"><i class='bx bx-map'></i></span>
+					        		        </div>
+					        		        <div class="text">
+						                        <p><span>آدرس:</span>مشهد، خیابان سناباد، ابتدای سنایی، پلاک 14.296</p>
+						                    </div>
+					                    </div>
+								    </div>
+                                    <div class="col-md-4">
+                                        <div class="dbox w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="dicon"><i class='bx bx-phone' ></i></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><span>تلفن:</span> <a href="tel://05137289563">05137289563</a></p>
+					                        </div>
+				                        </div>
+								    </div>
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		        <div class="icon d-flex align-items-center justify-content-center">
+					        			        <span class="dicon"><i class='bx bx-envelope' ></i></span>
+					        		        </div>
+					        		        <div class="text">
+						                        <p><span>ایمیل:</span> <a href="mailto:tabarsamen.inv@gmail.com">tabarsamen.inv@gmail.com</a></p>
+						                    </div>
+					                    </div>
+							        </div>
+						        </div>
+							</div>
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<h3 class="mb-4 text-center" style="color: #7825cb;">با ما در تماس باشید</h3>
+									<div id="form-message-warning" class="mb-4 w-100 text-center"></div> 
+				      		            <div id="form-message-success" class="mb-4 w-100 text-center">
+				                            با تشکر. پیام شما با موفقیت ارسال شد
+				      		            </div>
+									    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="نام و نام خانوادگی">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="ایمیل">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="موضوع">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="متن پیام"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="ارسال پیام" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/news.js"></script>
+</html>
