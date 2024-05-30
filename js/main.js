@@ -137,6 +137,10 @@ function scrollFunction() {
         fix.style.backgroundColor = "white";
         fix.style.height = "60px";
         document.getElementsByClassName('linkedcomp')[0].style.color = "#7825cb";
+        document.getElementsByClassName('linkedcomp')[1].style.color = "#7825cb";
+        document.getElementsByClassName('linkedcomp')[2].style.color = "#7825cb";
+        document.getElementsByClassName('linkedcomp')[3].style.color = "#7825cb";
+        document.getElementsByClassName('linkedcomp')[4].style.color = "#7825cb";
         document.getElementsByClassName("signin_link")[0].style.color = "#7825cb";
         document.getElementsByClassName("nav-btn-stay")[0].style.borderColor = "#7825cb";
         document.getElementsByClassName("login_icon")[0].style.color = "#7825cb";
@@ -154,6 +158,10 @@ function scrollFunction() {
         fix.style.height = "90px";
         let links = document.getElementsByClassName("nav-link");
         document.getElementsByClassName('linkedcomp')[0].style.color = "white";
+        document.getElementsByClassName('linkedcomp')[1].style.color = "white";
+        document.getElementsByClassName('linkedcomp')[2].style.color = "white";
+        document.getElementsByClassName('linkedcomp')[3].style.color = "white";
+        document.getElementsByClassName('linkedcomp')[4].style.color = "white";
         document.getElementsByClassName("signin_link")[0].style.color = "white";
         document.getElementsByClassName("nav-btn-stay")[0].style.borderColor = "white";
         document.getElementsByClassName("login_icon")[0].style.color = "white";
