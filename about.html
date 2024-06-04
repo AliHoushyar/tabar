@@ -5,168 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تبار ثامن</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./style/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./style/app.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/sider.css">
     <link rel="stylesheet" href="./style/card.css">
     <link rel="stylesheet" href="./style/news.css">
     <link rel="stylesheet" href="./style/footer.css">
-
 </head>
 <body>
     <div class="site-top">
-        <nav class="navbar navbar-expand-lg navback" id="fixnav">
-            <a class="mylogo" href="./index.html"><img id="navlogo" src="./img/logo3.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="container-fluid maincontainer">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="./index.html">صفحه اصلی</a>
-                    </div>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>سامانه سهامداران</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>پرتال سهامداران</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>سوالات متداول</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>رسانه</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>اقتصادی</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>سیاسی و اجتماعی</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>بازار سرمایه</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>آموزش</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>نمای بازار</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>فایلهای آموزشی</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>اطلاعیه ها</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>صورتهای مالی</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>کدال</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>سایر آگهی ها</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>شرکتهای مرتبط</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a> کشت و صنعت جوین</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a> سنگ رزمندگان</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a> باربری گل کوثر</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a> گونی بافی سمنان</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>کارگزاری سهام گستران شرق</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <button class="dropdown marrg">
-                        <div class="linkedcomp dropdown-title">
-                            <span>معرفی تبار</span>
-                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                        </div>
-                        <div class="dropdown-content-container">
-                            <div class="dropdown-content">
-                                <div class="mydropdown-item dropdown-link">
-                                    <a>تاریچه و فعالیت</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>حاکمیت شرکتی</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>کمیته های تخصصی</a>
-                                </div>
-                                <div class="mydropdown-item dropdown-link dropdown-item-last">
-                                    <a>اعضا هیئت مدیره</a>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                    <div class="nav-item navbar-link links marrg">
-                        <a class="nav-link" href="./index.html">ارتباط با ما</a>
-                    </div>
+        <section class="cd-slider" style="display: none;">
+            <ul>
+              <li data-color="#1f1f1f3f">
+                <div class="content slide1" style="background-image:url(./img/14020101_1252253-1.jpg)">
+                  <blockquote>
+                    <p>سال 1403</p>
+                    <span class="shoar">جهش تولید با مشارکت مردم</span>
+                  </blockquote>
                 </div>
+              </li>
+              <li data-color="#1f1f1f3f">
+                <div class="content slide2" style="background-image:url(./img/tabar.jpg)">
+                  <blockquote>
+                    <p>شرکت تبار ثامن</p>
+                    <span>از بهترین شرکت های سرمایه گذاری شرق کشور</span>
+                  </blockquote>
+                </div>
+              </li> 
+              <li data-color="#1f1f1f3f">
+                <div class="content slide3" style="background-image:url(./img/shrine.jpg)">
+                  <blockquote>
+                    <p>موقعیت شرکت</p>
+                    <span>مشهد در کنار حرم مطهر رضوی</span>
+                  </blockquote>
+                </div>
+              </li>
+              <li data-color="#1f1f1f3f">
+                <div class="content slide4" style="background-image:url(./img/future.jpg)">
+                  <blockquote>
+                    <p>شعار شرکت</p>
+                    <span class="shoar">آینده ای روشن در تبار ثامن</span>
+                  </blockquote>
+                </div>
+              </li>
+            </ul>
+            <nav class="mynav">
+              <div><a class="prev" href="#"></a></div>
+              <div><a class="next" href="#"></a></div>
+            </nav>
+        </section>
+        <header id="nav-menu" aria-label="navigation bar">
+            <div class="navcontainer">
+              <div class="nav-start">
+                <a class="logo" href="/">
+                  <img src="./img/logo.png" width="55" height="75" alt="Inc Logo" />
+                </a>
+                <nav class="menu">
+                  <ul class="menu-bar">
+                    <li><a class="nav-link" href="/">صفحه اصلی</a></li>
+                    <li>
+                      <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                        سامانه سهامداران
+                        <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                      </button>
+                      <div id="dropdown2" class="dropdown">
+                        <ul role="menu">
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#branding">پرتال سهامداران</a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#illustrations">سوالات متداول</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                          رسانه
+                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="dropdown1" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#best-of-the-day">
+                                <img src="./img/economy.png" class="icon" />
+                                <div>
+                                  <span class="dropdown-link-title">اخبار اقتصادی</span>
+                                  <p>جدید ترین اخبار اقتصادی ایران و جهان</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#featured-streams">
+                                <img src="./img/politic.png" class="icon" />
+                                <div>
+                                  <span class="dropdown-link-title">اخبار سیاسی و اجتماعی</span>
+                                  <p>تاثیرگذار ترین اخبار سیاسی بر بازار سرمایه</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#subscriptions">
+                                <img src="./img//bource.png" class="icon" />
+                                <div>
+                                  <span class="dropdown-link-title">اخبار بازار سرمایه</span>
+                                  <p>برگرفته از خبرگزاری های معتبر بورسی</p>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown3" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                          آموزش
+                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="dropdown3" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#branding">نمای بازار</a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#illustrations">فایل های آموزشی</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown4" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                          اطلاعیه ها
+                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="dropdown4" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#branding">صورت های مالی و مجامع</a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#illustrations">کدال</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#illustrations">سایر آگهی ها</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown5" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                          شرکت های مرتبط
+                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="dropdown5" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#best-of-the-day">
+                                <img src="./img/navjovein.png" class="icon" />
+                                <div>
+                                  <span class="dropdown-link-title">شرکت کشت و صنعت جوین</span>
+                                  <p>اطلاعات بیشتر درباره شرکت</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#featured-streams">
+                                <img src="./img/navmadan.png" class="icon" />
+                                <div>
+                                  <span class="dropdown-link-title">معدن سنگ رزمندگان خراسان</span>
+                                  <p>اطلاعات بیشتر درباره شرکت</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#featured-streams">
+                                  <img src="./img/trannav.png" class="icon" />
+                                  <div>
+                                    <span class="dropdown-link-title">شرکت باربری گل کوثر</span>
+                                    <p>اطلاعات بیشتر درباره شرکت</p>
+                                  </div>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#featured-streams">
+                                  <img src="./img/navgoni.png" class="icon" />
+                                  <div>
+                                    <span class="dropdown-link-title">شرکت گونی بافی سمنان</span>
+                                    <p>اطلاعات بیشتر درباره شرکت</p>
+                                  </div>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#featured-streams">
+                                  <img src="./img/sahamnav.png" class="icon" />
+                                  <div>
+                                    <span class="dropdown-link-title">شرکت سهام گستران شرق</span>
+                                    <p>اطلاعات بیشتر درباره شرکت</p>
+                                  </div>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#featured-streams">
+                                  <img src="./img/navexport.png" class="icon" />
+                                  <div>
+                                    <span class="dropdown-link-title">شرکت بازرگانی امید تبار خراسان</span>
+                                    <p>اطلاعات بیشتر درباره شرکت</p>
+                                  </div>
+                                </a>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown6" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                            درباره تبار
+                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div id="dropdown6" class="dropdown">
+                          <ul role="menu">
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#branding">تاریخچه و فعالیت</a>
+                            </li>
+                            <li role="menuitem">
+                              <a class="dropdown-link" href="#illustrations">حاکمیت شرکتی</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#illustrations">کمیته های تخصصی</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="dropdown-link" href="#illustrations">اعضاء هیئت مدیره</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="/">ارتباط با ما</a></li>
+                  </ul>
+                </nav>
+              </div>
+          
+              <div class="nav-end">
+                <div class="right-navcontainer">
+                  <button class="btn btn-primary">ورود</button>
+                </div>
+          
+                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+                  <i class="bx bx-menu" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
-            <button class="nav-btn-stay" onclick="">
-                <svg class="login_icon"xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                </svg>                      
-                <a href="./loin page/index.html" class="signin_link">ورود</a>                    
-            </button>
-        </nav>
+        </header>
     </div>
     <div class="history">
         <div class="history-text">
