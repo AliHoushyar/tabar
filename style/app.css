@@ -323,6 +323,29 @@ summary:after {
   text-align: center;
   width: 25px;
 }
+
+@media (max-width: 767px) {
+  .faq-body{
+    width: 100%;
+    margin: 0;
+  }
+  .faq-list{
+    width: 100%;
+    padding: 0;
+  }
+  summary{
+    font-size: 16px;
+  }
+  summary::after{
+    display: none;
+  }
+  details[open] p {
+    margin-right: 10px;
+    padding-right: 10px;
+    opacity: 100;
+    transition: all 3s ease;
+  }
+}
 /* ---------------------------------------- */
 .ftco-section {
   padding: 7em 0; 
@@ -570,6 +593,15 @@ textarea.form-control {
     opacity: 1;
   }
 }
+@media (max-width: 767px) {
+  .news_box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .news_box img{
+    width: 250px;
+  }
+}
 
 .newsTitle{
   color: #5e3090cb;
@@ -650,6 +682,17 @@ textarea.form-control {
 .history-image img{
   width: 650px;
 }
+@media (max-width: 767px) {
+  .history-text{
+    width: 100%;
+    height: 100%;
+    margin-top: 160px;
+    margin-bottom: 20px;
+  }
+  .history-image{
+    display: none;
+  }
+}
 
 .mang{
   height: 100vh;
@@ -706,4 +749,13 @@ textarea.form-control {
 
 .mangCard span{
   color: #919191;
+}
+
+@media (max-width: 767px) {
+  .mang{
+    margin-top: 1000px;
+  }
+  .mang_cards{
+    flex-direction: column;
+  }
 }
