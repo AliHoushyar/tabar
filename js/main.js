@@ -177,129 +177,129 @@
 //       }
 // }
 
-// const wrapper = document.querySelector(".wrappercontain");
-// const carousel = document.querySelector(".carousel2");
-// const firstCardWidth = carousel.querySelector(".newscard").offsetWidth;
-// const arrowBtns = document.querySelectorAll(".wrappercontain i");
-// const carouselChildrens = [...carousel.children];
-// let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
-// let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-// carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-//     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-// });
-// carouselChildrens.slice(0, cardPerView).forEach(card => {
-//     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-// });
-// carousel.classList.add("no-transition");
-// carousel.classList.remove("no-transition");
-// arrowBtns.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         carousel.scrollLeft += btn.id == "leftbtn" ? -firstCardWidth : firstCardWidth;
-//     });
-// });
-// const dragStart = (e) => {
-//     isDragging = true;
-//     carousel.classList.add("dragging");
-//     startX = e.pageX;
-//     startScrollLeft = carousel.scrollLeft;
-// }
-// const dragging = (e) => {
-//     if(!isDragging) return;
-//     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-// }
-// const dragStop = () => {
-//     isDragging = false;
-//     carousel.classList.remove("dragging");
-// }
-// const infiniteScroll = () => {
-//     if(carousel.scrollLeft === 0) {
-//         carousel.classList.add("no-transition");
-//         carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-//         carousel.classList.remove("no-transition");
-//     }
-//     else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-//         carousel.classList.add("no-transition");
-//         carousel.scrollLeft = carousel.offsetWidth;
-//         carousel.classList.remove("no-transition");
-//     }
-//     clearTimeout(timeoutId);
-//     if(!wrapper.matches(":hover")) autoPlay();
-// }
-// const autoPlay = () => {
-//     if(window.innerWidth < 800 || !isAutoPlay) return; 
-//     timeoutId = setTimeout(() => carousel.scrollLeft -= firstCardWidth, 3000);
-// }
-// autoPlay();
-// carousel.addEventListener("mousedown", dragStart);
-// carousel.addEventListener("mousemove", dragging);
-// document.addEventListener("mouseup", dragStop);
-// carousel.addEventListener("scroll", infiniteScroll);
-// wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-// wrapper.addEventListener("mouseleave", autoPlay);
+const wrapper = document.querySelector(".wrappercontain");
+const carousel = document.querySelector(".carousel2");
+const firstCardWidth = carousel.querySelector(".newscard").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrappercontain i");
+const carouselChildrens = [...carousel.children];
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+carousel.classList.add("no-transition");
+carousel.classList.remove("no-transition");
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "leftbtn" ? -firstCardWidth : firstCardWidth;
+    });
+});
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if(!isDragging) return;
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+const infiniteScroll = () => {
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+    }
+    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+    clearTimeout(timeoutId);
+    if(!wrapper.matches(":hover")) autoPlay();
+}
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; 
+    timeoutId = setTimeout(() => carousel.scrollLeft -= firstCardWidth, 3000);
+}
+autoPlay();
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
 
 // ------------------------------------------------------------------------------------------------------
-const dropdownBtn = document.querySelectorAll(".dropdown-btn");
-const dropdown = document.querySelectorAll(".dropdown");
-const hamburgerBtn = document.getElementById("hamburger");
-const navMenu = document.querySelector(".menu");
-const links = document.querySelectorAll(".dropdown a");
+// const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+// const dropdown = document.querySelectorAll(".dropdown");
+// const hamburgerBtn = document.getElementById("hamburger");
+// const navMenu = document.querySelector(".menu");
+// const links = document.querySelectorAll(".dropdown a");
 
-function setAriaExpandedFalse() {
-  dropdownBtn.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
-}
+// function setAriaExpandedFalse() {
+//   dropdownBtn.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+// }
 
-function closeDropdownMenu() {
-  dropdown.forEach((drop) => {
-    drop.classList.remove("active");
-    drop.addEventListener("click", (e) => e.stopPropagation());
-  });
-}
+// function closeDropdownMenu() {
+//   dropdown.forEach((drop) => {
+//     drop.classList.remove("active");
+//     drop.addEventListener("click", (e) => e.stopPropagation());
+//   });
+// }
 
-function toggleHamburger() {
-  navMenu.classList.toggle("show");
-}
+// function toggleHamburger() {
+//   navMenu.classList.toggle("show");
+// }
 
-dropdownBtn.forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    const dropdownIndex = e.currentTarget.dataset.dropdown;
-    const dropdownElement = document.getElementById(dropdownIndex);
+// dropdownBtn.forEach((btn) => {
+//   btn.addEventListener("click", function (e) {
+//     const dropdownIndex = e.currentTarget.dataset.dropdown;
+//     const dropdownElement = document.getElementById(dropdownIndex);
 
-    dropdownElement.classList.toggle("active");
-    dropdown.forEach((drop) => {
-      if (drop.id !== btn.dataset["dropdown"]) {
-        drop.classList.remove("active");
-      }
-    });
-    e.stopPropagation();
-    btn.setAttribute(
-      "aria-expanded",
-      btn.getAttribute("aria-expanded") === "false" ? "true" : "false"
-    );
-  });
-});
+//     dropdownElement.classList.toggle("active");
+//     dropdown.forEach((drop) => {
+//       if (drop.id !== btn.dataset["dropdown"]) {
+//         drop.classList.remove("active");
+//       }
+//     });
+//     e.stopPropagation();
+//     btn.setAttribute(
+//       "aria-expanded",
+//       btn.getAttribute("aria-expanded") === "false" ? "true" : "false"
+//     );
+//   });
+// });
 
-// close dropdown menu when the dropdown links are clicked
-links.forEach((link) =>
-  link.addEventListener("click", () => {
-    closeDropdownMenu();
-    setAriaExpandedFalse();
-    toggleHamburger();
-  })
-);
+// // close dropdown menu when the dropdown links are clicked
+// links.forEach((link) =>
+//   link.addEventListener("click", () => {
+//     closeDropdownMenu();
+//     setAriaExpandedFalse();
+//     toggleHamburger();
+//   })
+// );
 
-// close dropdown menu when you click on the document body
-document.documentElement.addEventListener("click", () => {
-  closeDropdownMenu();
-  setAriaExpandedFalse();
-});
+// // close dropdown menu when you click on the document body
+// document.documentElement.addEventListener("click", () => {
+//   closeDropdownMenu();
+//   setAriaExpandedFalse();
+// });
 
-// close dropdown when the escape key is pressed
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closeDropdownMenu();
-    setAriaExpandedFalse();
-  }
-});
+// // close dropdown when the escape key is pressed
+// document.addEventListener("keydown", (e) => {
+//   if (e.key === "Escape") {
+//     closeDropdownMenu();
+//     setAriaExpandedFalse();
+//   }
+// });
 
-// toggle hamburger menu
-hamburgerBtn.addEventListener("click", toggleHamburger);
+// // toggle hamburger menu
+// hamburgerBtn.addEventListener("click", toggleHamburger);
