@@ -759,3 +759,219 @@ textarea.form-control {
     flex-direction: column;
   }
 }
+
+.hakem{
+  padding: 20px 20px;
+  width: 80%;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  text-align: justify;
+  text-justify:inter-word;
+  line-height: 28px;
+}
+.sec1{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec1div{
+  width: 50%;
+}
+.coo{
+  width: 45%;
+  border-radius: 20px;
+}
+.title2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.hakemtable { 
+	width: 90%; 
+	border-collapse: collapse; 
+	margin:50px auto;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Zebra striping */
+.hakemtable tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+.hakemtable th { 
+	background: #7c34db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+.hakemtable td,.hakemtable th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: right !important; 
+	font-size: 18px;
+	}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.hakemtable { 
+	  	width: 100%; 
+	}
+
+	.hakemtable,.hakemtable thead,.hakemtable tbody,.hakemtable th,.hakemtable td,.hakemtable tr { 
+		display: block; 
+    direction: rtl !important;
+	}
+	
+	.hakemtable thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.hakemtable tr { border: 1px solid #ccc; }
+	
+	.hakemtable td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	.hakemtable td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		content: attr(data-column);
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+.komite{
+  padding: 20px 20px;
+  width: 80%;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  text-align: justify;
+  text-justify:inter-word;
+  line-height: 28px;
+}
+.Tcard {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-image: linear-gradient(-45deg, #2d24aba8 0%, #d2489d 100% );
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 30px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Tcardheading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.Tcardpara {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.Tcardoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.Tcard:hover .Tcardoverlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Tcard .Tcardcard-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.Tcard:hover .Tcardcard-btn {
+  opacity: 1;
+  scale: 1;
+}
+
+.Tcard .Tcardcard-btn:hover {
+  box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Tcard .Tcardcard-btn:active {
+  scale: 0.95;
+}
+
+.Tcardoverlay::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #2e24ab80 0%, #d2489d80 100% );
+  transition: transform 0.5s ease;
+}
+
+.Tcard:hover .Tcardoverlay::after {
+  transform: translate(-50%, -50%) scale(2);
+}
+.toturials{
+  margin-top: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .toturials{
+    flex-direction: column;
+  }
+}
