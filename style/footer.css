@@ -130,5 +130,11 @@
       justify-content: space-between;
       gap: 70px;
     }
+    .footer_sec{
+      margin-right: 20px;
+    }
+    .footer_social{
+      margin-right: 20px;
+    }
 }
   
