@@ -607,10 +607,10 @@ textarea.form-control {
   color: #5e3090cb;
   font-size: 18px;
   margin-top: 10px;
-  height: 50px; /* CHANGED */
-  overflow: hidden; /* CHANGED */
-  white-space: wrap; /* CHANGED */
-  text-overflow: ellipsis; /* CHANGED */
+  height: 50px;
+  overflow: hidden;
+  white-space: wrap; 
+  text-overflow: ellipsis;
 }
 
 .newsDate{
@@ -667,7 +667,7 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  background-color: #ffffff;/* CHANGED */
+  background-color: #ffffff;
 }
 .history-text{
   width: 50%;
@@ -859,6 +859,19 @@ only screen and (max-width: 760px),
 	}
 
 }
+
+@media (max-width: 767px) {
+  .hakemimg{
+    display: none;
+  }
+  .sec1div{
+    width: 100%;
+  }
+  .coo{
+    display: none;
+  }
+}
+
 .komite{
   padding: 20px 20px;
   width: 80%;

@@ -560,16 +560,21 @@ button {
   padding: 0.1rem;
   margin-right: 1rem;
   font-size: 1.9rem;
+  color: #6800b2;
 }
 
 @media (max-width: 1100px) {
   #hamburger {
     display: block;
   }
-
+  .btn-primary{
+    display: none;
+  }
   .navcontainer {
     padding: 1.2rem;
   }
+
+
 
   .menu {
     display: none;
