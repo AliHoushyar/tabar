@@ -607,6 +607,10 @@ textarea.form-control {
   color: #5e3090cb;
   font-size: 18px;
   margin-top: 10px;
+  height: 50px; /* CHANGED */
+  overflow: hidden; /* CHANGED */
+  white-space: wrap; /* CHANGED */
+  text-overflow: ellipsis; /* CHANGED */
 }
 
 .newsDate{
@@ -663,6 +667,7 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  background-color: #ffffff;/* CHANGED */
 }
 .history-text{
   width: 50%;
@@ -973,5 +978,56 @@ only screen and (max-width: 760px),
 @media (max-width: 767px) {
   .toturials{
     flex-direction: column;
+  }
+}
+
+/* NEW CHANGED */
+.daraee1{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.daraeecard {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.daraeecard:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.daraeecard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.daraeecard p{
+  color: #6c6c6c;
+}
+@media (max-width: 767px) {
+  .daraee1{
+    flex-direction: column;
+  }
+  .daraeecard{
+    width: 100%;
+    font-size: 14px;
   }
 }
