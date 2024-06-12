@@ -144,7 +144,7 @@ label{
     width: 100%;
     height: 60px;
     position: fixed;
-    top: 0;
+    top:0px;
     padding-top: 15px;
     padding-left: 100px;
   }
@@ -153,6 +153,7 @@ label{
   }
   .main{
     margin-right: 100px;
+    margin-top: 60px;
   }
   .phone_menu{
     display: flex !important;
@@ -176,5 +177,9 @@ label{
   }
   .logo{
     display: none;
+  }
+  
+  .info_title::before{
+    margin-right: -50px;
   }
 }

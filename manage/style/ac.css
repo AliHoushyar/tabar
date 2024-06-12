@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 767px){
     .info_title::after {
-        width: 365px;
+        width: 300px;
     }
     .ad_title::after{
         width: 355px;
@@ -96,7 +96,8 @@
         width: 345px;
     }
     .info_contain{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+        margin-right: -50px;
     }
     .long{
         grid-column: 1 / end;
