@@ -87,13 +87,13 @@
 
 @media screen and (max-width: 767px){
     .info_title::after {
-        width: 300px;
+        width: 280px;
     }
     .ad_title::after{
-        width: 355px;
+        width: 280px;
     }
     .hes_title::after{
-        width: 345px;
+        width: 280px;
     }
     .info_contain{
         grid-template-columns: repeat(1,1fr);

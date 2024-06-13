@@ -22,3 +22,9 @@ function checkCookie() {
   }
 }
 
+function menucome() {
+	document.getElementById("SIDE").style.right="0px";
+}
+function menugo() {
+	document.getElementById("SIDE").style.right="-400px";
+}

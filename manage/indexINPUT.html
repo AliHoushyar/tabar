@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title> شرکت تبار ثامن </title>
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/ac.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+<body>
+  <div class="side_bar" id="SIDE">
+      <div class="title">
+          <div class="logo">شرکت تبار ثامن</div>
+          <button class="menubtn2" onclick="menugo()">
+            <i class='bx bx-menu-alt-left' ></i>
+          </button>
+      </div>
+      <ul>
+        <li><a href="./index.html"><i class='bx bx-user-circle'></i>اطلاعات کاربری</a></li>
+        <li><a href="./pages/sahm.html"><i class='bx bx-bar-chart'></i>امور سهام</a></li>
+        <li><a href="./pages/send.html"><i class='bx bx-send' ></i>ارسال مدارک</a></li>
+        <li><a href="#"><i class='bx bx-photo-album'></i>گالری</a></li>
+        <li><a href="./pages/qa.html"><i class='bx bx-question-mark bx-flip-horizontal' ></i>پرسش و پاسخ</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <button class="menubtn" onclick="menucome()">
+      <i class='bx bx-menu-alt-right'></i>
+    </button>
+    <div class="account_name">
+      <img class="userimg" src="../img/user.png" alt="user">
+      <div class="name-role">
+        <span class="name">علی هوشیار خوشدل</span>
+        <span class="role">سهامدار</span>
+      </div>
+    </div>
+    <div class="fardi">
+        <span class="info_title ad_title">اطلاعات تماس</span>
+        <div class="info_contain" style="margin-top: 15px;">
+            <div class="inputBox">
+                <input type="text" placeholder="09150000000">
+                <span>موبایل :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="05130000000">
+                <span>تلفن :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="aaa@gmail.com">
+                <span>ایمیل :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="0000000000">
+                <span>کد پستی :</span>
+            </div>
+            <div class="inputBox">
+                <input required="" type="text" placeholder="1402/6/16">
+                <span>تاریخ تولد :</span>
+            </div>
+        </div>
+        <div class="info_contain" style="margin-top: 15px;">
+            <div class="inputBox">
+                <input type="text" placeholder="خراسان">
+                <span>استان :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="مشهد">
+                <span>شهر :</span>
+            </div>
+            <div class="inputBox">
+                <input class="adressinp" type="text" placeholder="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ">
+                <span>آدرس :</span>
+            </div>
+        </div>
+    </div>
+    <div class="fardi">
+        <span class="info_title hes_title">اطلاعات حساب</span>
+        <div class="info_contain" style="margin-top: 15px;">
+            <div class="inputBox">
+                <input type="text" placeholder="ملت">
+                <span>نام بانک :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="111111111111">
+                <span>شماره شبا :</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="0000 0000 0000 0000">
+                <span>شماره حساب :</span>
+            </div>
+        </div>
+    </div>
+    <div style="height: 10vh;"></div>
+  </div>
+  
+</body>
+<script src="./js/main.js"></script>
+</html>

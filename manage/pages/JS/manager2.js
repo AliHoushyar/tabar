@@ -38,8 +38,6 @@ $(".navbar-toggler").click(function(){
 	setTimeout(function(){ test(); });
 });
 
-
-
 // --------------add active class-on another-page move----------
 jQuery(document).ready(function($){
 	// Get current path and find target link
@@ -54,7 +52,6 @@ jQuery(document).ready(function($){
 	// Add active class to target link
 	target.parent().addClass('active');
 });
-
 
 
 
