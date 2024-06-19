@@ -306,27 +306,31 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="text" class="form-control" name="name" id="name" placeholder="نام و نام خانوادگی">
+													<input type="text" required oninvalid="this.setCustomValidity('پر کردن این فیلد الزامی است')"
+                          oninput="this.setCustomValidity('')" class="form-control" name="name" id="name" placeholder="نام و نام خانوادگی">
 												</div>
 											</div>
 											<div class="col-md-12"> 
 												<div class="form-group">
-													<input type="email" class="form-control" name="email" id="email" placeholder="ایمیل">
+													<input type="email" oninvalid="this.setCustomValidity('پر کردن این فیلد الزامی است')"
+                          oninput="this.setCustomValidity('')" required class="form-control" name="email" id="email" placeholder="ایمیل">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="موضوع">
+													<input type="text" oninvalid="this.setCustomValidity('پر کردن این فیلد الزامی است')"
+                          oninput="this.setCustomValidity('')" required class="form-control" name="subject" id="subject" placeholder="موضوع">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="متن پیام"></textarea>
+													<textarea name="message" oninvalid="this.setCustomValidity('پر کردن این فیلد الزامی است')"
+                          oninput="this.setCustomValidity('')" required class="form-control" id="message" cols="30" rows="8" placeholder="متن پیام"></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="ارسال پیام" class="btn btn-primary">
+													<input id="subBTN" type="submit" value="ارسال پیام" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
 											</div>
