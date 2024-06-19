@@ -9,3 +9,10 @@ window.onload = function(){
       color: '#e9c2ff'
     });
   }
+
+function changeText(){
+  const g = document.getElementById("enterToturial");
+  g.innerText = "شماره سهامداری را وارد کنید و کد ملی را در قسمت رمز عبور وارد کنید";
+}
+
+const inputs = document.getElementById("inputs");
