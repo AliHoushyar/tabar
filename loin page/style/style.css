@@ -204,3 +204,9 @@ body{
   margin-bottom: -50px;
   margin-top: -20px;
 }
+.loginLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
