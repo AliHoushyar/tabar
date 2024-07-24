@@ -123,6 +123,13 @@
   border-radius: 10px;
 }
 
+.newscard{
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .carousel2 .newscard h2 {
   font-weight: 500;
   font-size: 1.2rem;

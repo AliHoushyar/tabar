@@ -1,4 +1,5 @@
 $('#subbtn').click(function(){
+    // console.log($('#name').val());
     let name = $('#name').val();
     let email = $('#email').val();
     let sub = $('#subject').val();

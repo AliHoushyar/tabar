@@ -981,16 +981,19 @@ only screen and (max-width: 760px),
   transform: translate(-50%, -50%) scale(2);
 }
 .toturials{
-  margin-top: 190px;
+  margin-top: 140px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 0px 80px;
 }
 
 @media (max-width: 767px) {
   .toturials{
     flex-direction: column;
+    padding: 0px;
   }
 }
 
