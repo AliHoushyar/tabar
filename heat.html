@@ -1,312 +1,406 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تبار ثامن</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="./style/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="./style/app.css">
-    <link rel="stylesheet" href="./style/navbar.css">
-    <link rel="stylesheet" href="./style/sider.css">
-    <link rel="stylesheet" href="./style/card.css">
-    <link rel="stylesheet" href="./style/news.css">
-    <link rel="stylesheet" href="./style/footer.css">
-</head>
-<body style="background-color: white;">
+    <link rel="stylesheet" href="./style/app.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/sider.css" />
+    <link rel="stylesheet" href="./style/card.css" />
+    <link rel="stylesheet" href="./style/news.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+  </head>
+  <body style="background-color: white">
     <div class="site-top">
-        <section class="cd-slider" style="display: none;">
-            <ul>
-              <li data-color="#1f1f1f3f">
-                <div class="content slide1" style="background-image:url(./img/14020101_1252253-1.jpg)">
-                  <blockquote>
-                    <p>سال 1403</p>
-                    <span class="shoar">جهش تولید با مشارکت مردم</span>
-                  </blockquote>
-                </div>
-              </li>
-              <li data-color="#1f1f1f3f">
-                <div class="content slide2" style="background-image:url(./img/tabar.jpg)">
-                  <blockquote>
-                    <p>شرکت تبار ثامن</p>
-                    <span>از بهترین شرکت های سرمایه گذاری شرق کشور</span>
-                  </blockquote>
-                </div>
-              </li> 
-              <li data-color="#1f1f1f3f">
-                <div class="content slide3" style="background-image:url(./img/shrine.jpg)">
-                  <blockquote>
-                    <p>موقعیت شرکت</p>
-                    <span>مشهد در کنار حرم مطهر رضوی</span>
-                  </blockquote>
-                </div>
-              </li>
-              <li data-color="#1f1f1f3f">
-                <div class="content slide4" style="background-image:url(./img/future.jpg)">
-                  <blockquote>
-                    <p>شعار شرکت</p>
-                    <span class="shoar">آینده ای روشن در تبار ثامن</span>
-                  </blockquote>
-                </div>
-              </li>
-            </ul>
-            <nav class="mynav">
-              <div><a class="prev" href="#"></a></div>
-              <div><a class="next" href="#"></a></div>
-            </nav>
-        </section>
-        <header id="nav-menu" aria-label="navigation bar">
-            <div class="navcontainer">
-              <div class="nav-start">
-                <a class="logo" href="/">
-                  <img src="./img/logo.png" width="55" height="75" alt="Inc Logo" />
-                </a>
-                <nav class="menu">
-                  <ul class="menu-bar">
-                    <li><a class="nav-link" href="/">صفحه اصلی</a></li>
-                    <li>
-                      <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
-                        سامانه سهامداران
-                        <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                      </button>
-                      <div id="dropdown2" class="dropdown">
-                        <ul role="menu">
-                          <li role="menuitem">
-                            <a class="dropdown-link" href="#branding">پرتال سهامداران</a>
-                          </li>
-                          <li role="menuitem">
-                            <a class="dropdown-link" href="#illustrations">سوالات متداول</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                        <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
-                          رسانه
-                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="dropdown1" class="dropdown">
-                          <ul role="menu">
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#best-of-the-day">
-                                <img src="./img/economy.png" class="icon" />
-                                <div>
-                                  <span class="dropdown-link-title">اخبار اقتصادی</span>
-                                  <p>جدید ترین اخبار اقتصادی ایران و جهان</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#featured-streams">
-                                <img src="./img/politic.png" class="icon" />
-                                <div>
-                                  <span class="dropdown-link-title">اخبار سیاسی و اجتماعی</span>
-                                  <p>تاثیرگذار ترین اخبار سیاسی بر بازار سرمایه</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#subscriptions">
-                                <img src="./img//bource.png" class="icon" />
-                                <div>
-                                  <span class="dropdown-link-title">اخبار بازار سرمایه</span>
-                                  <p>برگرفته از خبرگزاری های معتبر بورسی</p>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="nav-link dropdown-btn" data-dropdown="dropdown3" aria-haspopup="true" aria-expanded="false" aria-label="discover">
-                          آموزش
-                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="dropdown3" class="dropdown">
-                          <ul role="menu">
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#branding">نمای بازار</a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#illustrations">فایل های آموزشی</a>
-                            </li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="nav-link dropdown-btn" data-dropdown="dropdown4" aria-haspopup="true" aria-expanded="false" aria-label="discover">
-                          اطلاعیه ها
-                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="dropdown4" class="dropdown">
-                          <ul role="menu">
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#branding">صورت های مالی و مجامع</a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#illustrations">کدال</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#illustrations">سایر آگهی ها</a>
-                            </li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="nav-link dropdown-btn" data-dropdown="dropdown5" aria-haspopup="true" aria-expanded="false" aria-label="browse">
-                          شرکت های مرتبط
-                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="dropdown5" class="dropdown">
-                          <ul role="menu">
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#best-of-the-day">
-                                <img src="./img/navjovein.png" class="icon" />
-                                <div>
-                                  <span class="dropdown-link-title">شرکت کشت و صنعت جوین</span>
-                                  <p>اطلاعات بیشتر درباره شرکت</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#featured-streams">
-                                <img src="./img/navmadan.png" class="icon" />
-                                <div>
-                                  <span class="dropdown-link-title">معدن سنگ رزمندگان خراسان</span>
-                                  <p>اطلاعات بیشتر درباره شرکت</p>
-                                </div>
-                              </a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#featured-streams">
-                                  <img src="./img/trannav.png" class="icon" />
-                                  <div>
-                                    <span class="dropdown-link-title">شرکت باربری گل کوثر</span>
-                                    <p>اطلاعات بیشتر درباره شرکت</p>
-                                  </div>
-                                </a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#featured-streams">
-                                  <img src="./img/navgoni.png" class="icon" />
-                                  <div>
-                                    <span class="dropdown-link-title">شرکت گونی بافی سمنان</span>
-                                    <p>اطلاعات بیشتر درباره شرکت</p>
-                                  </div>
-                                </a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#featured-streams">
-                                  <img src="./img/sahamnav.png" class="icon" />
-                                  <div>
-                                    <span class="dropdown-link-title">شرکت سهام گستران شرق</span>
-                                    <p>اطلاعات بیشتر درباره شرکت</p>
-                                  </div>
-                                </a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#featured-streams">
-                                  <img src="./img/navexport.png" class="icon" />
-                                  <div>
-                                    <span class="dropdown-link-title">شرکت بازرگانی امید تبار خراسان</span>
-                                    <p>اطلاعات بیشتر درباره شرکت</p>
-                                  </div>
-                                </a>
-                            </li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="nav-link dropdown-btn" data-dropdown="dropdown6" aria-haspopup="true" aria-expanded="false" aria-label="discover">
-                            درباره تبار
-                          <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="dropdown6" class="dropdown">
-                          <ul role="menu">
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#branding">تاریخچه و فعالیت</a>
-                            </li>
-                            <li role="menuitem">
-                              <a class="dropdown-link" href="#illustrations">حاکمیت شرکتی</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#illustrations">کمیته های تخصصی</a>
-                            </li>
-                            <li role="menuitem">
-                                <a class="dropdown-link" href="#illustrations">اعضاء هیئت مدیره</a>
-                            </li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li><a class="nav-link" href="/">ارتباط با ما</a></li>
-                  </ul>
-                </nav>
-              </div>
-          
-              <div class="nav-end">
-                <div class="right-navcontainer">
-                  <button class="btn btn-primary">ورود</button>
-                </div>
-          
-                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-                  <i class="bx bx-menu" aria-hidden="true"></i>
-                </button>
-              </div>
+      <section class="cd-slider" style="display: none">
+        <ul>
+          <li data-color="#1f1f1f3f">
+            <div
+              class="content slide1"
+              style="background-image: url(./img/14020101_1252253-1.jpg)"
+            >
+              <blockquote>
+                <p>سال 1403</p>
+                <span class="shoar">جهش تولید با مشارکت مردم</span>
+              </blockquote>
             </div>
-        </header>
+          </li>
+          <li data-color="#1f1f1f3f">
+            <div
+              class="content slide2"
+              style="background-image: url(./img/tabar.jpg)"
+            >
+              <blockquote>
+                <p>شرکت تبار ثامن</p>
+                <span>از بهترین شرکت های سرمایه گذاری شرق کشور</span>
+              </blockquote>
+            </div>
+          </li>
+          <li data-color="#1f1f1f3f">
+            <div
+              class="content slide3"
+              style="background-image: url(./img/shrine.jpg)"
+            >
+              <blockquote>
+                <p>موقعیت شرکت</p>
+                <span>مشهد در کنار حرم مطهر رضوی</span>
+              </blockquote>
+            </div>
+          </li>
+          <li data-color="#1f1f1f3f">
+            <div
+              class="content slide4"
+              style="background-image: url(./img/future.jpg)"
+            >
+              <blockquote>
+                <p>شعار شرکت</p>
+                <span class="shoar">آینده ای روشن در تبار ثامن</span>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+        <nav class="mynav">
+          <div><a class="prev" href="#"></a></div>
+          <div><a class="next" href="#"></a></div>
+        </nav>
+      </section>
+      <header id="nav-menu" aria-label="navigation bar">
+        <div class="navcontainer">
+          <div class="nav-start">
+            <a class="logo" href="/">
+              <img src="./img/logo.png" width="55" height="75" alt="Inc Logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li><a class="nav-link" href="/">صفحه اصلی</a></li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown2"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    سامانه سهامداران
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown2" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding"
+                          >پرتال سهامداران</a
+                        >
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >سوالات متداول</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown1"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="browse"
+                  >
+                    رسانه
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#best-of-the-day">
+                          <img src="./img/economy.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >اخبار اقتصادی</span
+                            >
+                            <p>جدید ترین اخبار اقتصادی ایران و جهان</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/politic.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >اخبار سیاسی و اجتماعی</span
+                            >
+                            <p>تاثیرگذار ترین اخبار سیاسی بر بازار سرمایه</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#subscriptions">
+                          <img src="./img//bource.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >اخبار بازار سرمایه</span
+                            >
+                            <p>برگرفته از خبرگزاری های معتبر بورسی</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown3"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    آموزش
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown3" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding">نمای بازار</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >فایل های آموزشی</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown4"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    اطلاعیه ها
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown4" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding"
+                          >صورت های مالی و مجامع</a
+                        >
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations">کدال</a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >سایر آگهی ها</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown5"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="browse"
+                  >
+                    شرکت های مرتبط
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown5" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#best-of-the-day">
+                          <img src="./img/navjovein.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >شرکت کشت و صنعت جوین</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/navmadan.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >معدن سنگ رزمندگان خراسان</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/trannav.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >شرکت باربری گل کوثر</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/navgoni.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >شرکت گونی بافی سمنان</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/sahamnav.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >شرکت سهام گستران شرق</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./img/navexport.png" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title"
+                              >شرکت بازرگانی امید تبار خراسان</span
+                            >
+                            <p>اطلاعات بیشتر درباره شرکت</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class="nav-link dropdown-btn"
+                    data-dropdown="dropdown6"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-label="discover"
+                  >
+                    درباره تبار
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+                  <div id="dropdown6" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#branding"
+                          >تاریخچه و فعالیت</a
+                        >
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >حاکمیت شرکتی</a
+                        >
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >کمیته های تخصصی</a
+                        >
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#illustrations"
+                          >اعضاء هیئت مدیره</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="nav-link" href="/">ارتباط با ما</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="nav-end">
+            <div class="right-navcontainer">
+              <button class="btn btn-primary">ورود</button>
+            </div>
+
+            <button
+              id="hamburger"
+              aria-label="hamburger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
     </div>
     <div class="mang">
-        <h3 class="mangTitle">اعضای هیئت مدیره</h3>
-        <div class="mang_cards">
-            <div class="mangCard">
-                <img src="./img/hosein.jpg" alt="Image"> <!-- CHANGED -->
-                <div class="details">
-                    <h5>احمد حسین آبادی</h5>
-                    <p>رئیس هیئت مدیره</p>
-                </div>
-                <span>تحصیلات : کارشناسی ارشد حسابداری</span>
-                <span>توضیحات :</span>
-            </div>
-            <div class="mangCard">
-                <img src="./img/madanchi.jpg" alt="Image"> <!-- CHANGED -->
-                <div class="details">
-                    <h5>محمد معدنچی</h5>
-                    <p>نایب رئیس هیئت مدیره </p>
-                </div>
-                <span>تحصیلات : کارشناسی ارشد خقوق</span>
-                <span>توضیحات : </span>
-            </div>
-            <div class="mangCard">
-                <img src="./img/ahmadi.jpg" alt="Image">
-                <div class="details">
-                    <h5>سید غلامرضا احمدی</h5>
-                    <p>مدیر عامل و عضو هیئت مدیره</p>
-                </div>
-                <span>تحصیلات : کارشناسی ارشد اقتصاد کشاورزی</span>
-                <span>توضیحات : </span>
-            </div>
-            <div class="mangCard">
-                <img src="./img/abd.jpg" alt="Image">
-                <div class="details">
-                    <h5>عبدالله هوشیار خوشدل</h5>
-                    <p>عضو هیئت مدیره</p>
-                </div>
-                <span>تحصیلات : کارشناسی برق</span>
-                <span>توضیحات : نماینده شرکت کشت و صنعت جوین</span>
-            </div>
-            <div class="mangCard">
-                <img src="./img/MAHDAVI.jpg" alt="Image">
-                <div class="details">
-                    <h5>علی مهدوی پور</h5>
-                    <p>عضو هیئت مدیره</p>
-                </div>
-                <span>تحصیلات : کارشناسی ارشد حسابداری</span>
-                <span>توضیحات : نماینده شرکت کشاورزی برکت جوین</span>
-            </div>
+      <h3 class="mangTitle">اعضای هیئت مدیره</h3>
+      <div class="mang_cards">
+        <div class="mangCard">
+          <img src="./img/hosein.jpg" alt="Image" />
+          <!-- CHANGED -->
+          <div class="details">
+            <h5>احمد حسین آبادی</h5>
+            <p>رئیس هیئت مدیره</p>
+          </div>
+          <span>تحصیلات : کارشناسی ارشد حسابداری</span>
+          <span>توضیحات :</span>
         </div>
+        <div class="mangCard">
+          <img src="./img/madanchi.jpg" alt="Image" />
+          <!-- CHANGED -->
+          <div class="details">
+            <h5>محمد معدنچی</h5>
+            <p>نایب رئیس هیئت مدیره</p>
+          </div>
+          <span>تحصیلات : کارشناسی ارشد حقوق</span>
+          <span>توضیحات : </span>
+        </div>
+        <div class="mangCard">
+          <img src="./img/ahmadi.jpg" alt="Image" />
+          <div class="details">
+            <h5>سید غلامرضا احمدی</h5>
+            <p>مدیر عامل و عضو هیئت مدیره</p>
+          </div>
+          <span>تحصیلات : کارشناسی ارشد اقتصاد کشاورزی</span>
+          <span>توضیحات : </span>
+        </div>
+        <div class="mangCard">
+          <img src="./img/abd.jpg" alt="Image" />
+          <div class="details">
+            <h5>عبدالله هوشیار خوشدل</h5>
+            <p>عضو هیئت مدیره</p>
+          </div>
+          <span>تحصیلات : کارشناسی برق</span>
+          <span>توضیحات : نماینده شرکت کشت و صنعت جوین</span>
+        </div>
+        <div class="mangCard">
+          <img src="./img/MAHDAVI.jpg" alt="Image" />
+          <div class="details">
+            <h5>علی مهدوی پور</h5>
+            <p>عضو هیئت مدیره</p>
+          </div>
+          <span>تحصیلات : کارشناسی ارشد حسابداری</span>
+          <span>توضیحات : نماینده شرکت کشاورزی برکت جوین</span>
+        </div>
+      </div>
     </div>
-</body>
-<script src="./js/jquery.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
+  </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
 </html>
